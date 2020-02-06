@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MoveByTouch : MonoBehaviour
 {
+
+    //Script à mettre sur la caméra !
+
     public float moveSpeed = 200;
     public GameObject character;
 
