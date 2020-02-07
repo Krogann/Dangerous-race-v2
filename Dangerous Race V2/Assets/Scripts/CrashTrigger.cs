@@ -7,7 +7,9 @@ public class CrashTrigger : MonoBehaviour
     //Script à mettre sur le Player
 
 
-    public CameraShake cameraShakeRef;
+    public CameraEffect cameraShakeRef;
+    public CarMovement carMovementRef;
+    
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -15,18 +17,19 @@ public class CrashTrigger : MonoBehaviour
         {
             print("CRASH");
             StartCoroutine(cameraShakeRef.Shake(.15f, .4f));
+            StartCoroutine(gameOver());
+
+
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    IEnumerator gameOver()
     {
-        
-    }
+        carMovementRef.enabled = true;
+        cameraShakeRef.enabled = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        yield return new WaitForSeconds(3);
+
+        //gameOverMenu.SetActive(true);
     }
 }

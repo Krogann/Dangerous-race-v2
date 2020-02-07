@@ -383,6 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraShakeRef: {fileID: 1293226212}
+  carMovementRef: {fileID: 0}
 --- !u!114 &189072202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,7 +511,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &372178113
 PrefabInstance:
@@ -691,7 +692,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &418427457
 GameObject:
@@ -1168,7 +1169,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696798457
 GameObject:
@@ -1588,12 +1589,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 840305963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81119479eee7d1e4486ba5188b07cee0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3593910312aaf8b439694d11ba6ef6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 52880045}
-  highScore: {fileID: 1883168284}
-  scoreSpeedTime: 30
+  highScoreText: {fileID: 1883168284}
+  scoreText: {fileID: 52880045}
 --- !u!114 &840305965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,7 +1669,7 @@ RectTransform:
   - {fileID: 1883168286}
   - {fileID: 148653454}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2049,6 +2049,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933e0c5c140dfc44ea9d15b5adaba5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraTarget: {fileID: 0}
+  sSpeed: 10
+  dist: {x: 0, y: 0, z: 0}
+  lookTarget: {fileID: 0}
 --- !u!1 &1307870242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,6 +2389,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -266784449424167315, guid: ac6f0220b5ecb35489d273bcab78047f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 141980, guid: ac6f0220b5ecb35489d273bcab78047f, type: 3}
       propertyPath: m_Name
       value: SPW_Vehicle_Land_Static_Muscle Car_Color03
