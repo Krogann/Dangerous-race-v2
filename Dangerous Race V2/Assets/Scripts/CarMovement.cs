@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
-    [Range(-50, 200)]
+    [Range(-200, 200)]
     public float speed = 5f;
     public float timeLaps = 30.0f;
     public float addSpeed = 1.0f;

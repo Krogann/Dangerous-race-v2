@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 489772}
   - component: {fileID: 3376304}
   - component: {fileID: 2367344}
+  - component: {fileID: -2751201166869472416}
   m_Layer: 0
   m_Name: SPW_Urban_Bldg_11_Color01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-2751201166869472416
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 32.20132, y: 12.300106, z: 22.666014}
+  m_Center: {x: 0, y: 6.14995, z: -2.2323475}
