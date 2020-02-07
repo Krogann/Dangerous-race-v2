@@ -30,7 +30,6 @@ public class CarSpawner : MonoBehaviour
         yield return new WaitForSeconds(startWait);
         while (!stop)
         {
-            print("Spawn");
             randEnemy = Random.Range(0, Enemies.Length);
 
             //TODO: controler le spawnPosition pour q le player puissse sortir
