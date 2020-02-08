@@ -10,6 +10,7 @@ public class MoveByTouch : MonoBehaviour
     public float moveSpeed = 200;
     public GameObject character;
 
+
     private Rigidbody characterBody;
     private float screenWidth;
 

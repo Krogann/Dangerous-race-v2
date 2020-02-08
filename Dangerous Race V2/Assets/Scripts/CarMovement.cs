@@ -9,7 +9,7 @@ public class CarMovement : MonoBehaviour
     public float timeLaps = 30.0f;
     public float addSpeed = 1.0f;
     private float delta;
-    Rigidbody Car;
+    public Rigidbody car;
 
     public float timeForDestroy = 8f;
 

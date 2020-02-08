@@ -97,6 +97,7 @@ MonoBehaviour:
   speed: 30
   timeLaps: 5
   addSpeed: 30
+  car: {fileID: -2931630840999312632}
   timeForDestroy: 18
 --- !u!54 &-2931630840999312632
 Rigidbody:
