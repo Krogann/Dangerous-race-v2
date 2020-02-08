@@ -10,6 +10,9 @@ public class CarMovement : MonoBehaviour
     public float addSpeed = 1.0f;
     private float delta;
     Rigidbody Car;
+
+    public float timeForDestroy = 8f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +32,20 @@ public class CarMovement : MonoBehaviour
             delta = timeLaps;
         }
 
-        if (transform.position.z < -30.0f)
-        {
-            Destroy(gameObject);
-        }
-        //Car.AddForce(movement.normalized * speed * Time.deltaTime);
+        StartCoroutine(waitDestroy());
+
+        //if (transform.position.z < -30.0f)
+        //{
+        //    Destroy(gameObject);
+        //}
+
+
+        ////Car.AddForce(movement.normalized * speed * Time.deltaTime);
+    }
+
+    IEnumerator waitDestroy()
+    {
+        yield return new WaitForSeconds(timeForDestroy);
+        Destroy(gameObject);
     }
 }

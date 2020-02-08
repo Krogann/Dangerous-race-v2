@@ -97,6 +97,7 @@ MonoBehaviour:
   speed: -100
   timeLaps: 5
   addSpeed: -100
+  timeForDestroy: 6
 --- !u!54 &5976339562116429944
 Rigidbody:
   m_ObjectHideFlags: 0

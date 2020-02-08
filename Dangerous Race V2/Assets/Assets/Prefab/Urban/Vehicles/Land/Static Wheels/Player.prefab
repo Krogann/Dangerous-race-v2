@@ -128,6 +128,7 @@ MonoBehaviour:
   speed: 5
   timeLaps: 30
   addSpeed: 1
+  timeForDestroy: 18
 --- !u!114 &8210969972682795275
 MonoBehaviour:
   m_ObjectHideFlags: 0
