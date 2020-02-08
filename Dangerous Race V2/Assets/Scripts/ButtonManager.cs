@@ -9,7 +9,6 @@ public class ButtonManager : MonoBehaviour
     public GameObject optionMenu;
     public GameObject mapMenu;
 
-
     public void PlayReset()
     {
         SceneManager.LoadScene(1);

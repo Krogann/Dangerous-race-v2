@@ -30,6 +30,5 @@ public class Score3 : MonoBehaviour
         if (PlayerPrefs.GetInt("score") <= highScore)
             PlayerPrefs.SetInt("score", highScore);
         highScoreText.text = "Personal Best: " + PlayerPrefs.GetInt("score").ToString() + " KM";
-
     }
 }
